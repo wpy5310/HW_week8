@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<style>
+			table, th, td {
+  			border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table border="1">
+			<tr>
+				<th colspan="3">Personal File</th>
+			</tr>
+			<tr>
+				<td rowspan="3"><img src="https://upload.cc/i1/2020/12/03/scbQ5i.jpeg" width="200" height="200">
+				<td colspan="2" width="600">
+					<form action="/action_page.php" method="post">
+						<label for="username">Name:</label>
+						<input type="text" name="username"><br>
+					</form>	
+					<form action="/action_page.php">
+						<label for="radio">Gender:</label>
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female
+						<input type="radio" name="gender" value="other">Other
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="/action_page.php">
+						<label for="country">Country:</label>
+						<select name="country" id="country">
+							<option value="taiwan">Taiwan</option>
+							<option value="china">China</option>
+							<option value="japan">Japan</option>
+							<option value="korea">Korea</option>
+							<option value="other">Other</option>
+						</select>
+					</form>		
+				</td>	
+				<td>
+					<form action="/action_page.php" method="post">
+						<label for="birthday">Birthday:</label>
+						<input type="text" name="birthday"><br>
+					</form>
+				</td>	
+			</tr>
+			<tr>
+				<td colspan="2">
+					<form action="/action_page.php" method="post">
+							<label for="email">Email:</label>
+							<input type="text" name="email"><br>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td height="30">Hobby</td>
+				<td colspan="2">
+					<form action="/action_page.php">
+						<input type="checkbox" name="hobby" value="music">Music
+						<input type="checkbox" name="hobby" value="reading">Reading
+						<input type="checkbox" name="hobby" value="sport">Sport
+						<input type="checkbox" name="hobby" value="movie">Movie
+						<input type="checkbox" name="hobby" value="game">Game
+						<input type="checkbox" name="hobby" value="other">Other
+					</form>	
+				</td>
+			</tr>
+			<tr>
+				<td height="30">Skill</td>
+				<td colspan="2">
+					<form action="/action_page.php">
+						<input type="checkbox" name="skill" value="java">JAVA
+						<input type="checkbox" name="skill" value="html">HTML
+						<input type="checkbox" name="skill" value="python">Python
+						<input type="checkbox" name="skill" value="office">Microsoft Office
+						<input type="checkbox" name="skill" value="adobe">Adobr Premiere
+						<input type="checkbox" name="skill" value="other">Other
+					</form>	
+				</td>
+			</tr>
+			<tr>
+				<td>Say Something</td>
+				<td colspan="2">
+					<form action="/action_page.php">
+						<label for="personalfile"></label>
+						<textarea id="personalfile" name="personalfile" rows="5" cols="80">Say something here.
+						</textarea>	
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="3" height="30">
+					<form action="/action_page.php">
+						<input type="submit" value="Submit">			
+						<input type="submit" value="Reset">
+					</form>
+				</th>	
+			</tr>					
+		</table>
+	</body>		
+</html>
